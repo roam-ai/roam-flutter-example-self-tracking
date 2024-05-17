@@ -1,5 +1,7 @@
 PODS:
   - Flutter (1.0.0)
+  - permission_handler_apple (9.3.0):
+    - Flutter
   - roam-ios (0.1.23):
     - Starscream (= 4.0.6)
   - roam_flutter (0.1.5):
@@ -9,6 +11,7 @@ PODS:
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
   - roam_flutter (from `.symlinks/plugins/roam_flutter/ios`)
 
 SPEC REPOS:
@@ -19,15 +22,18 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
   roam_flutter:
     :path: ".symlinks/plugins/roam_flutter/ios"
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
   roam-ios: d15d0d1c3f1c8eddfae05e20661e7a00b6f5f6fb
   roam_flutter: 81ef96794f0e1f9e92b049d543df4dc6124672d7
   Starscream: fb2c4510bebf908c62bd383bcf05e673720e91fd
 
-PODFILE CHECKSUM: 1959d098c91d8a792531a723c4a9d7e9f6a01e38
+PODFILE CHECKSUM: c59c9bec2c4aecaf49fa9a58923e9ea533d0deb5
 
 COCOAPODS: 1.15.2

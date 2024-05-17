@@ -1,4 +1,4 @@
-package com.example.roam_flutter_example_self_tracking
+package com.roam.around
 
 import io.flutter.embedding.android.FlutterActivity
 
