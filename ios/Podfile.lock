@@ -1,0 +1,33 @@
+PODS:
+  - Flutter (1.0.0)
+  - roam-ios (0.1.23):
+    - Starscream (= 4.0.6)
+  - roam_flutter (0.1.5):
+    - Flutter
+    - roam-ios (~> 0.1.14)
+  - Starscream (4.0.6)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - roam_flutter (from `.symlinks/plugins/roam_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - roam-ios
+    - Starscream
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  roam_flutter:
+    :path: ".symlinks/plugins/roam_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  roam-ios: d15d0d1c3f1c8eddfae05e20661e7a00b6f5f6fb
+  roam_flutter: 81ef96794f0e1f9e92b049d543df4dc6124672d7
+  Starscream: fb2c4510bebf908c62bd383bcf05e673720e91fd
+
+PODFILE CHECKSUM: 1959d098c91d8a792531a723c4a9d7e9f6a01e38
+
+COCOAPODS: 1.15.2
