@@ -107,24 +107,25 @@ class _RoamFlutterExampleSelfTrackingState extends State<RoamFlutterExampleSelfT
 
   void _startTracking() async {
     Map<String, dynamic> fitnessTracking = {"timeInterval": 10};
-    // Roam.subscribeEvents();
+    // Subscribe to location
     Roam.subscribeLocation();
-
+    // Set Foreground to true
+    Roam.setForeground(
+      true,
+      "Flutter Example",
+      "Tap to open",
+      "mipmap/ic_launcher",
+      "com.roam.around.MainActivity",
+    );
+    // Allow mocking of location
     Roam.allowMockLocation(allow: true);
+    // Print location when received
     await Roam.onLocation((location) {
       print("Location: ");
       print(jsonEncode(location));
     });
-
-    Roam.startTracking(trackingMode: "active", customMethods: fitnessTracking);
-
-    // await Roam.toggleListener(
-    //     locations: true,
-    //     events: true,
-    //     callBack: ({user}) {
-    //       //Do something with user
-    //       print(user);
-    //     });
+    // Start tracking
+    Roam.startTracking(trackingMode: "custom", customMethods: fitnessTracking);
   }
 
   void _stopTracking() async {
